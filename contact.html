@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | KaynAero Technocrats</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">KaynAero Technocrats</a>
+            </div>
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="who-we-serve.html">Who We Serve</a></li>
+                    <li><a href="process.html">Our Process</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact KaynAero Technocrats</h1>
+                <p>We prefer WhatsApp for quick conversations, but you can also email us or use the form below.</p>
+            </div>
+        </section>
+
+        <section class="section contact-methods">
+            <div class="container">
+                <div class="contact-card primary-contact">
+                    <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h2>WhatsApp (Recommended)</h2>
+                    <p>For fastest response, message us on WhatsApp. We typically reply within a few hours during business days.</p>
+                    <div class="contact-details">
+                        <p><strong>Phone:</strong> +254 712 345 678</p>
+                        <p><strong>Hours:</strong> Mon‑Fri, 8am‑5pm EAT</p>
+                    </div>
+                    <a href="https://wa.me/254712345678?text=Hello%20KaynAero%20Technocrats,%20I'm%20interested%20in%20your%20website%20services" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Open WhatsApp
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2>Email</h2>
+                    <p>For detailed inquiries or if you prefer email communication.</p>
+                    <div class="contact-details">
+                        <p><strong>Address:</strong> info@kaynaero.co.ke</p>
+                        <p><strong>Response time:</strong> Within 24 hours</p>
+                    </div>
+                    <a href="mailto:info@kaynaero.co.ke?subject=Website%20Inquiry%20from%20KaynAero%20Website" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Send Email
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h2>Contact Form</h2>
+                    <p>Use the form below if you prefer not to use WhatsApp or email directly.</p>
+                    <p>We'll respond via email or WhatsApp based on your preference.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-form-section">
+            <div class="container">
+                <h2>Send Us a Message</h2>
+                <p>Please provide basic details about your institution and what you need.</p>
+                
+                <form id="contactForm" class="contact-form" netlify>
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="institution">Institution Name *</label>
+                        <input type="text" id="institution" name="institution" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="type">Institution Type *</label>
+                        <select id="type" name="type" required>
+                            <option value="" disabled selected>Select one</option>
+                            <option value="school">School</option>
+                            <option value="church">Church / Prayer Centre</option>
+                            <option value="organization">Small Institution / Organization</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number (for WhatsApp)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your website needs..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preference">Preferred Contact Method</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="preference" value="whatsapp" checked>
+                                WhatsApp
+                            </label>
+                            <label>
+                                <input type="radio" name="preference" value="email">
+                                Email
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    
+                    <p class="form-note">We'll respond within 24 hours on business days. If urgent, please use WhatsApp directly.</p>
+                </form>
+                
+                <div id="formSuccess" class="success-message" style="display: none;">
+                    <h3><i class="fas fa-check-circle"></i> Message Sent Successfully</h3>
+                    <p>Thank you for contacting us. We'll respond within 24 hours via your preferred method.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section response-expectations">
+            <div class="container">
+                <h2>What to Expect After Contacting Us</h2>
+                <div class="expectations-grid">
+                    <div class="expectation">
+                        <h3><i class="fas fa-reply"></i> 1. Quick Response</h3>
+                        <p>We'll acknowledge your message within a few hours (WhatsApp) or 24 hours (email/form).</p>
+                    </div>
+                    <div class="expectation">
+                        <h3><i class="fas fa-question-circle"></i> 2. Initial Questions</h3>
+                        <p>We'll ask about your institution, goals, and timeline to understand your needs.</p>
+                    </div>
+                    <div class="expectation">
+                        <h3><i class="fas fa-file-alt"></i> 3. Clear Proposal</h3>
+                        <p>We'll provide a straightforward proposal with scope, cost, and timeline—no hidden fees.</p>
+                    </div>
+                    <div class="expectation">
+                        <h3><i class="fas fa-handshake"></i> 4. No Pressure</h3>
+                        <p>Take your time to review. We're here to help, not to pressure you into a decision.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>KaynAero Technocrats</h3>
+                    <p>Building simple, credible, and functional websites for Kenyan institutions since 2022.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="who-we-serve.html">Who We Serve</a></li>
+                        <li><a href="process.html">Our Process</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Page</a></li>
+                        <li><a href="https://wa.me/254712345678" target="_blank">WhatsApp: +254 712 345 678</a></li>
+                        <li><a href="mailto:info@kaynaero.co.ke">info@kaynaero.co.ke</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> KaynAero Technocrats. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
