@@ -14,13 +14,28 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">KaynAero Technocrats</a>
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">KaynAero Technocrats</span>
+                            <span class="logo-tag">Since 2022</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="authority-markers">
+                    <span class="authority-badge"><i class="fas fa-shield-alt"></i> Professional</span>
+                    <span class="authority-badge"><i class="fas fa-bolt"></i> Fast Delivery</span>
+                    <span class="authority-badge"><i class="fas fa-phone-alt"></i> +254 712 345 678</span>
+                </div>
             </div>
             <nav class="nav" id="mainNav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
                     <li><a href="who-we-serve.html">Who We Serve</a></li>
                     <li><a href="process.html">Our Process</a></li>
                     <li><a href="portfolio.html" class="active">Portfolio</a></li>
@@ -39,6 +54,20 @@
             <div class="container">
                 <h1>Portfolio & Demo Websites</h1>
                 <p>Below are example websites we've built for different types of institutions. These are <strong>demo websites</strong> to show our style and capabilities.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">7-14</span>
+                        <span class="stat-label">Days Delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Client Satisfaction</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -62,7 +91,7 @@
                                 <li><i class="fas fa-check"></i> Mobile‑first responsive design</li>
                                 <li><i class="fas fa-check"></i> School information and history</li>
                                 <li><i class="fas fa-check"></i> Academic calendar and term dates</li>
-                                <li><i class="fas fa-check"></i Staff directory with photos</li>
+                                <li><i class="fas fa-check"></i> Staff directory with photos</li>
                                 <li><i class="fas fa-check"></i> Gallery of school activities</li>
                                 <li><i class="fas fa-check"></i> WhatsApp contact for inquiries</li>
                                 <li><i class="fas fa-check"></i> Fee structure page</li>
@@ -72,7 +101,7 @@
                                 <a href="https://greenvalley-demo.kaynaero.co.ke" class="btn btn-primary" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> View Live Demo
                                 </a>
-                                <a href="https://wa.me/254712345678?text=Hello%20KaynAero,%20I%20saw%20the%20school%20demo%20and%20would%20like%20a%20similar%20website" class="btn btn-outline" target="_blank">
+                                <a href="#inquiry" class="btn btn-outline">
                                     <i class="fab fa-whatsapp"></i> Inquire About Similar
                                 </a>
                             </div>
@@ -108,7 +137,7 @@
                                 <a href="https://gracechurch-demo.kaynaero.co.ke" class="btn btn-primary" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> View Live Demo
                                 </a>
-                                <a href="https://wa.me/254712345678?text=Hello%20KaynAero,%20I%20saw%20the%20church%20demo%20and%20would%20like%20a%20similar%20website" class="btn btn-outline" target="_blank">
+                                <a href="#inquiry" class="btn btn-outline">
                                     <i class="fab fa-whatsapp"></i> Inquire About Similar
                                 </a>
                             </div>
@@ -144,10 +173,92 @@
                                 <a href="https://community-demo.kaynaero.co.ke" class="btn btn-primary" target="_blank">
                                     <i class="fas fa-external-link-alt"></i> View Live Demo
                                 </a>
-                                <a href="https://wa.me/254712345678?text=Hello%20KaynAero,%20I%20saw%20the%20organization%20demo%20and%20would%20like%20a%20similar%20website" class="btn btn-outline" target="_blank">
+                                <a href="#inquiry" class="btn btn-outline">
                                     <i class="fab fa-whatsapp"></i> Inquire About Similar
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry Form for Portfolio -->
+        <section class="section inquiry" id="inquiry">
+            <div class="container">
+                <h2>Interested in a Similar Website?</h2>
+                <p class="section-subtitle">Get a fast quote for your institution. Email optional - WhatsApp response guaranteed.</p>
+                
+                <div class="inquiry-form-container">
+                    <form class="inquiry-form" id="portfolioInquiryForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="portfolioName">Your Name *</label>
+                                <input type="text" id="portfolioName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="portfolioPhone">Phone (WhatsApp) *</label>
+                                <input type="tel" id="portfolioPhone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="portfolioEmail">Email (Optional)</label>
+                            <input type="email" id="portfolioEmail" name="email">
+                            <small>We'll use WhatsApp if you prefer</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="portfolioDemo">Which demo interests you? *</label>
+                            <select id="portfolioDemo" name="demo_type" required>
+                                <option value="">Select one</option>
+                                <option value="school">School Website Demo</option>
+                                <option value="church">Church Website Demo</option>
+                                <option value="organization">Organization Website Demo</option>
+                                <option value="custom">Custom Design</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="portfolioTimeline">How soon do you need it?</label>
+                            <select id="portfolioTimeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="urgent">Urgent (7 days)</option>
+                                <option value="2-weeks">2 weeks</option>
+                                <option value="1-month">1 month</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="portfolioMessage">Additional Notes (Optional)</label>
+                            <textarea id="portfolioMessage" name="message" rows="3" placeholder="Any specific features or requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Get Fast Quote
+                        </button>
+                        
+                        <p class="form-note">
+                            <i class="fas fa-bolt"></i> We respond within 2 hours via WhatsApp during business hours.
+                        </p>
+                    </form>
+                    
+                    <div class="inquiry-sidebar">
+                        <h3><i class="fab fa-whatsapp"></i> Prefer Direct WhatsApp?</h3>
+                        <p>For fastest response, message us directly:</p>
+                        <a href="https://wa.me/254712345678?text=Hello%20KaynAero,%20I%20saw%20your%20portfolio%20and%20need%20a%20similar%20website!" class="btn btn-primary whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat Now on WhatsApp
+                        </a>
+                        
+                        <div class="inquiry-benefits">
+                            <h4>Why Choose Us?</h4>
+                            <ul>
+                                <li><i class="fas fa-check-circle"></i> Fast 7-14 day delivery</li>
+                                <li><i class="fas fa-check-circle"></i> Transparent pricing</li>
+                                <li><i class="fas fa-check-circle"></i> WhatsApp-first support</li>
+                                <li><i class="fas fa-check-circle"></i> Kenyan market expertise</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -168,10 +279,13 @@
                 <h2>Like What You See?</h2>
                 <p>Let's discuss how we can create a similar—but uniquely yours—website for your institution.</p>
                 <div class="cta-buttons">
-                    <a href="https://wa.me/254712345678?text=Hello%20KaynAero,%20I%20viewed%20your%20demos%20and%20would%20like%20to%20discuss%20a%20website%20for%20my%20institution" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Discuss Your Website
+                    <a href="https://wa.me/254712345678?text=Hello%20KaynAero,%20I%20viewed%20your%20portfolio%20and%20would%20like%20a%20fast%20quote!" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Fast Quote
                     </a>
-                    <a href="process.html" class="btn btn-secondary">Learn About Our Process</a>
+                    <a href="process.html" class="btn btn-secondary">Learn About Our Fast Process</a>
+                </div>
+                <div class="delivery-promise">
+                    <p><i class="fas fa-bolt"></i> <strong>Fast Delivery Promise:</strong> Most websites completed in 7-14 days from content receipt.</p>
                 </div>
             </div>
         </section>
@@ -179,15 +293,38 @@
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-authority">
+                <div class="footer-seal">
+                    <div class="seal-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="seal-content">
+                        <h4>KaynAero Technocrats</h4>
+                        <p>Trusted by Kenyan institutions since 2022</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="footer-contact-info">
+                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +254 712 345 678</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@kaynaero.co.ke</p>
+                    <p><i class="fas fa-clock"></i> <strong>Response Time:</strong> 2 hours max</p>
+                </div>
+            </div>
+            
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>KaynAero Technocrats</h3>
+                    <h3>Professional Services</h3>
                     <p>Building simple, credible, and functional websites for Kenyan institutions since 2022.</p>
+                    <div class="trust-badges">
+                        <span class="trust-badge"><i class="fas fa-shield-alt"></i> Secure</span>
+                        <span class="trust-badge"><i class="fas fa-bolt"></i> Fast</span>
+                        <span class="trust-badge"><i class="fas fa-handshake"></i> Reliable</span>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html">Services & Pricing</a></li>
                         <li><a href="who-we-serve.html">Who We Serve</a></li>
                         <li><a href="process.html">Our Process</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
@@ -197,13 +334,14 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="contact.html">Contact Page</a></li>
-                        <li><a href="https://wa.me/254712345678" target="_blank">WhatsApp: +254 712 345 678</a></li>
-                        <li><a href="mailto:info@kaynaero.co.ke">info@kaynaero.co.ke</a></li>
+                        <li><a href="https://wa.me/254712345678" target="_blank">WhatsApp Fast Response</a></li>
+                        <li><a href="mailto:info@kaynaero.co.ke">Email Inquiry</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> KaynAero Technocrats. All rights reserved.</p>
+                <p>&copy; <span id="currentYear"></span> KaynAero Technocrats. Serving Kenya since 2022. All rights reserved.</p>
+                <p class="footer-note"><i class="fas fa-bolt"></i> Fast website delivery for Kenyan institutions</p>
             </div>
         </div>
     </footer>

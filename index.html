@@ -9,19 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/faviconi.ico">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header with Authority Markers -->
     <header class="header">
         <div class="container">
-            <div class="logo">
-                <a href="index.html">KaynAero Technocrats</a>
+            <div class="logo-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">KaynAero Technocrats</span>
+                            <span class="logo-tag">Since 2022</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="authority-markers">
+                    <span class="authority-badge"><i class="fas fa-shield-alt"></i> Professional</span>
+                    <span class="authority-badge"><i class="fas fa-bolt"></i> Fast Delivery</span>
+                    <span class="authority-badge"><i class="fas fa-phone-alt"></i> +254 712 345 678</span>
+                </div>
             </div>
             <nav class="nav" id="mainNav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html">Services & Pricing</a></li>
                     <li><a href="who-we-serve.html">Who We Serve</a></li>
                     <li><a href="process.html">Our Process</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
@@ -35,24 +50,48 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero with Updated CTA -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1>Professional Websites for Schools, Churches & Institutions</h1>
                 <p class="hero-subtitle">Simple, credible websites that build trust and improve communication. Made for Kenya, working everywhere.</p>
-                <div class="hero-actions">
-                    <a href="https://wa.me/254712345678?text=Hello%20KaynAero%20Technocrats,%20I'm%20interested%20in%20a%20website%20for%20my%20institution" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Start on WhatsApp
-                    </a>
-                    <a href="portfolio.html" class="btn btn-secondary">See Demo Websites</a>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">7-14</span>
+                        <span class="stat-label">Days Delivery</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">WhatsApp Support</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Institutions Served</span>
+                    </div>
                 </div>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/254712345678?text=Hello%20KaynAero%20Technocrats,%20I%20need%20a%20website%20fast!" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Fast Quote
+                    </a>
+                    <a href="#pricing" class="btn btn-secondary">See Pricing</a>
+                </div>
+                
+                <p class="hero-note">
+                    <i class="fas fa-bolt"></i> Fast-track delivery available. Most websites ready in 7 days.
+                </p>
             </div>
             <div class="hero-image">
-                <div class="image-placeholder">
-                    <i class="fas fa-globe-africa"></i>
-                </div>
-            </div>
+    <div class="image-container">
+        <img src="images/kenya-institutions-hero.png" alt="KaynAero Technocrats - Professional websites for Kenyan schools, churches, and institutions" class="hero-img">
+        <div class="seal">
+            <i class="fas fa-award"></i>
+            <span>Trusted Since 2022</span>
+        </div>
+    </div>
+</div>
         </div>
     </section>
 
@@ -117,6 +156,172 @@
         </div>
     </section>
 
+    <!-- Pricing Section -->
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <h2>Clear, Transparent Pricing</h2>
+            <p class="section-subtitle">One-time development fee with optional annual hosting. No hidden costs. Fast delivery guaranteed.</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Basic Website</h3>
+                        <div class="price">Ksh 15,000 - 25,000</div>
+                        <p class="price-note">One-time development fee</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 3-5 page responsive website</li>
+                        <li><i class="fas fa-check"></i> Mobile-first design</li>
+                        <li><i class="fas fa-check"></i> WhatsApp integration</li>
+                        <li><i class="fas fa-check"></i> Basic contact form</li>
+                        <li><i class="fas fa-check"></i> 1 year hosting included</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <div class="delivery-time">
+                            <i class="fas fa-bolt"></i>
+                            <span>Delivery: 7-10 days</span>
+                        </div>
+                        <a href="#inquiry" class="btn btn-outline">Get Quote</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Standard Website</h3>
+                        <div class="price">Ksh 25,000 - 40,000</div>
+                        <p class="price-note">One-time development fee</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5-7 page responsive website</li>
+                        <li><i class="fas fa-check"></i> Custom design elements</li>
+                        <li><i class="fas fa-check"></i> WhatsApp + email integration</li>
+                        <li><i class="fas fa-check"></i> Gallery/image showcase</li>
+                        <li><i class="fas fa-check"></i> Event calendar</li>
+                        <li><i class="fas fa-check"></i> 1 year hosting & support</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <div class="delivery-time">
+                            <i class="fas fa-bolt"></i>
+                            <span>Delivery: 10-14 days</span>
+                        </div>
+                        <a href="#inquiry" class="btn btn-primary">Get Quote</a>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Advanced Website</h3>
+                        <div class="price">Ksh 40,000+</div>
+                        <p class="price-note">Custom quote based on needs</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 8+ page comprehensive website</li>
+                        <li><i class="fas fa-check"></i> Advanced custom features</li>
+                        <li><i class="fas fa-check"></i> Multiple contact methods</li>
+                        <li><i class="fas fa-check"></i> Resource/download section</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> 2 years hosting included</li>
+                    </ul>
+                    <div class="pricing-footer">
+                        <div class="delivery-time">
+                            <i class="fas fa-bolt"></i>
+                            <span>Delivery: 14-21 days</span>
+                        </div>
+                        <a href="#inquiry" class="btn btn-outline">Get Custom Quote</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> <strong>Annual hosting after first year:</strong> Ksh 3,000 - 5,000/year depending on website size.</p>
+                <p><i class="fas fa-sync-alt"></i> <strong>Content updates:</strong> Ksh 500-1,500 per update, or monthly packages available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Inquiry Form -->
+    <section class="section inquiry" id="inquiry">
+        <div class="container">
+            <h2>Get a Fast Quote</h2>
+            <p class="section-subtitle">Provide basic details for a quick estimate. Email is optional - we can respond via WhatsApp.</p>
+            
+            <div class="inquiry-form-container">
+                <form class="inquiry-form" id="quickInquiryForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="inquiryName">Your Name *</label>
+                            <input type="text" id="inquiryName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="inquiryPhone">Phone (WhatsApp) *</label>
+                            <input type="tel" id="inquiryPhone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inquiryEmail">Email (Optional)</label>
+                        <input type="email" id="inquiryEmail" name="email">
+                        <small>We'll use WhatsApp if you prefer</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inquiryType">What do you need? *</label>
+                        <select id="inquiryType" name="type" required>
+                            <option value="">Select one</option>
+                            <option value="school">School Website</option>
+                            <option value="church">Church Website</option>
+                            <option value="organization">Organization Website</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inquiryBudget">Estimated Budget</label>
+                        <select id="inquiryBudget" name="budget">
+                            <option value="">Select range</option>
+                            <option value="15-25">Ksh 15,000 - 25,000</option>
+                            <option value="25-40">Ksh 25,000 - 40,000</option>
+                            <option value="40+">Ksh 40,000+</option>
+                            <option value="not-sure">Not sure yet</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inquiryMessage">Brief Description (Optional)</label>
+                        <textarea id="inquiryMessage" name="message" rows="3" placeholder="e.g., 'Need website for our primary school with 5 pages...'"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Get Fast Quote
+                    </button>
+                    
+                    <p class="form-note">
+                        <i class="fas fa-bolt"></i> We respond within 2 hours via WhatsApp during business hours.
+                    </p>
+                </form>
+                
+                <div class="inquiry-sidebar">
+                    <h3><i class="fab fa-whatsapp"></i> Prefer Direct WhatsApp?</h3>
+                    <p>For fastest response, message us directly:</p>
+                    <a href="https://wa.me/254712345678?text=Hello%20KaynAero,%20I%20need%20a%20website%20quote!" class="btn btn-primary whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat Now on WhatsApp
+                    </a>
+                    
+                    <div class="inquiry-benefits">
+                        <h4>Why WhatsApp-First?</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Instant responses</li>
+                            <li><i class="fas fa-check-circle"></i> Share images/screenshots</li>
+                            <li><i class="fas fa-check-circle"></i> Voice messages for details</li>
+                            <li><i class="fas fa-check-circle"></i> Most Kenyans prefer it</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Who It's For -->
     <section class="section audience">
         <div class="container">
@@ -139,27 +344,55 @@
             </div>
             
             <div class="cta-box">
-                <h3>Ready for a Professional Website?</h3>
-                <p>Start with a simple WhatsApp conversation. No technical talk, just clear steps.</p>
-                <a href="https://wa.me/254712345678?text=Hello%20KaynAero%20Technocrats,%20I'd%20like%20to%20discuss%20a%20website%20for%20my%20institution" class="btn btn-primary" target="_blank">
-                    <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
-                </a>
+                <div class="cta-content">
+                    <h3>Ready for a Professional Website?</h3>
+                    <p><i class="fas fa-bolt"></i> Fast delivery available. Most websites ready in 7-14 days.</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/254712345678?text=Hello%20KaynAero%20Technocrats,%20I%20need%20a%20website%20fast!" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Fast Quote
+                        </a>
+                        <a href="services.html" class="btn btn-secondary">See Full Services</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer with Authority -->
     <footer class="footer">
         <div class="container">
+            <div class="footer-authority">
+                <div class="footer-seal">
+                    <div class="seal-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="seal-content">
+                        <h4>KaynAero Technocrats</h4>
+                        <p>Trusted by Kenyan institutions since 2022</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+                    </div>
+                </div>
+                <div class="footer-contact-info">
+                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +254 712 345 678</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@kaynaero.co.ke</p>
+                    <p><i class="fas fa-clock"></i> <strong>Response Time:</strong> 2 hours max</p>
+                </div>
+            </div>
+            
             <div class="footer-grid">
                 <div class="footer-col">
-                    <h3>KaynAero Technocrats</h3>
+                    <h3>Professional Services</h3>
                     <p>Building simple, credible, and functional websites for Kenyan institutions since 2022.</p>
+                    <div class="trust-badges">
+                        <span class="trust-badge"><i class="fas fa-shield-alt"></i> Secure</span>
+                        <span class="trust-badge"><i class="fas fa-bolt"></i> Fast</span>
+                        <span class="trust-badge"><i class="fas fa-handshake"></i> Reliable</span>
+                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="services.html">Services & Pricing</a></li>
                         <li><a href="who-we-serve.html">Who We Serve</a></li>
                         <li><a href="process.html">Our Process</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
@@ -169,13 +402,14 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="contact.html">Contact Page</a></li>
-                        <li><a href="https://wa.me/254712345678" target="_blank">WhatsApp: +254 712 345 678</a></li>
-                        <li><a href="mailto:info@kaynaero.co.ke">info@kaynaero.co.ke</a></li>
+                        <li><a href="https://wa.me/254712345678" target="_blank">WhatsApp Fast Response</a></li>
+                        <li><a href="mailto:info@kaynaero.co.ke">Email Inquiry</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> KaynAero Technocrats. All rights reserved.</p>
+                <p>&copy; <span id="currentYear"></span> KaynAero Technocrats. Serving Kenya since 2022. All rights reserved.</p>
+                <p class="footer-note"><i class="fas fa-bolt"></i> Fast website delivery for Kenyan institutions</p>
             </div>
         </div>
     </footer>
